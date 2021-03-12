@@ -1,0 +1,15 @@
+:host ::ng-deep .mat-button-toggle-label-content {
+  line-height: 28px !important;
+  padding: 0 90px !important;
+}
+
+:host ::ng-deep .mat-button-toggle-appearance-standard {
+  background-color: #1a233a !important;
+  color: #8a99b5 !important;
+  border: 1px solid #8a99b5;
+}
+
+:host ::ng-deep .mat-button-toggle-checked {
+  background-color: #4f009e !important;
+  color: #8a99b5 !important;
+}

@@ -1,0 +1,36 @@
+<div class="container-fluid py-3">
+  <mat-card class="m-3">
+    <div #map style="width:100%;height:400px"></div>
+  </mat-card>
+
+  <div class="mx-3 mt-5 mb-3">
+    <mat-form-field class="example-form-field">
+      <mat-label>Enter city name</mat-label>
+      <input #search matInput type="text" [formControl]="searchInput" />
+      <button
+        mat-button
+        *ngIf="search.value"
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="clearSearch($event)"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <a class="mb-1 raised-button" (click)="clickSearch(search.value)"
+      ><span>Search</span></a
+    >
+  </div>
+
+  <div class="mx-3 my-1 custom-table">
+    <div class="example-loading-shade" *ngIf="isLoadingResults">
+      <mat-spinner></mat-spinner>
+    </div>
+    <app-table
+      [header]="tableHeader"
+      [data]="tableData"
+      (rowClickedEvent)="updateMap($event)"
+    ></app-table>
+  </div>
+</div>

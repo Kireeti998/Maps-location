@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center pt-4">
+  <mat-button-toggle-group
+    name="fontStyle"
+    aria-label="Font Style"
+    [formControl]="toggleViewButton"
+  >
+    <mat-button-toggle value="locator" routerLink="/maps/locator"
+      >Locator</mat-button-toggle
+    >
+    <mat-button-toggle value="list" routerLink="/maps/list"
+      >List</mat-button-toggle
+    >
+  </mat-button-toggle-group>
+</div>
+<router-outlet></router-outlet>

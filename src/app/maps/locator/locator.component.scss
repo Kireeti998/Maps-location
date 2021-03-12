@@ -1,0 +1,85 @@
+.search-label {
+  color: #bdd1f8;
+  font-size: 20px;
+}
+
+:host ::ng-deep .mat-input-element {
+  caret-color: white;
+  color: white;
+  font-size: 16px;
+}
+
+:host ::ng-deep .mat-form-field {
+  width: 350px;
+}
+
+:host ::ng-deep .mat-icon {
+  color: white;
+}
+
+:host ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: transparent;
+}
+
+:host ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: white !important;
+  font-size: 15px;
+}
+
+:host ::ng-deep .mat-spinner circle {
+  stroke: white;
+}
+
+:host ::ng-deep .mat-progress-spinner svg {
+  height: 60px !important;
+  width: 60px !important;
+}
+
+:host ::ng-deep .mat-progress-spinner {
+  height: 60px !important;
+  width: 60px !important;
+}
+
+.raised-button {
+  position: relative;
+  display: inline-block;
+  padding: 6px 60px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #bdd1f8;
+  font-size: 12px;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #15202a, -5px -1px 2px #2b4054;
+  margin-left: 40px;
+}
+
+.raised-button:hover {
+  color: white;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  text-align: center !important;
+  padding: 0px 40px !important;
+}
+
+.custom-table {
+  max-height: 300px;
+  width: fit-content;
+  overflow-y: auto;
+  position: relative;
+}
+
+.example-loading-shade {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
